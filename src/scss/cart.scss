@@ -1,0 +1,272 @@
+/*Mobile*/
+/*Cart*/
+.content-wrapper {
+  color: #646464;
+}
+
+.shoppingcart {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  color: #646464;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+  margin: 1.5rem 1rem;
+}
+
+  table {
+    font-size: 1.4rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #fff;
+    margin:0 1rem 1.5rem 1rem;
+    input {
+      width: 4rem;
+      padding: 5px;
+    }
+    thead {
+      display: table-header-group;
+      vertical-align: middle;
+      border-color: inherit;
+    }
+    tr {
+      display: table-row;
+      vertical-align: inherit;
+      border-color: inherit;
+    }
+    tr:hover {
+      background-color:#fafafa
+    }
+    th, td {
+      border: 1px solid #dbdbdb;
+      border-width: 0 0 2px;
+      vertical-align: middle;
+      text-align: left;
+      padding: .25em .5em;
+    }
+    th:first-child, td:first-child {
+      display: none;
+    }
+    th:last-child, td:last-child{
+      padding-left: 0;
+    }
+    td {
+      text-align:center;
+    }
+    td:nth-child(2) {
+      text-align: left;
+    }
+    th {
+      .pro-quantity, .pro-update, .pro-del, .pro-price {
+        width: 10%;
+      }
+      .pro-name {
+        width: 60%;
+      }
+    }
+    tbody {
+      tr:last-child {
+        td {
+          border-bottom-width: 0;
+        }
+      }
+    }
+  }
+
+.total-price {
+  font-size: 1.4rem;
+  color: #646464;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: right;
+  margin-right: 3rem;
+}
+
+.button {
+  background-color: #00aced;
+  border-color: transparent;
+  color: #fff;
+  -webkit-appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1.4rem;
+  height: 2.25em;
+  line-height: 1.5;
+  padding-bottom: calc(.375em - 1px);
+  padding-top: calc(.375em - 1px);
+  position: relative;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-left: .75em;
+  padding-right: .75em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: #0296ce;
+}
+
+.control {
+  text-align: right;
+  margin-right: 1.15rem;
+  margin-bottom: 10rem;
+  span:last-child {
+    margin-left: .5rem;
+  }
+}
+
+.empty {
+  color: #646464;
+  font-size: 2.5rem;
+  text-align: center;
+  .fa-shopping-cart {
+    color: #646464;
+    font-size: 5rem;
+    margin-top: 20rem;
+  }
+  p {
+    margin: 1rem auto 20rem auto;
+  }
+}
+
+/*Checkout*/
+.contact-form {
+  margin: .5rem 1rem;
+  legend {
+    display: none;
+  }
+  fieldset {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    border: 0;
+    p {
+      margin: .8rem 0;
+      label {
+        display:inline-block;
+        width: 15rem;
+        text-align: right;
+      }
+      label:last-child {
+        width: 30rem;
+        text-align: left;
+        margin-left: 1rem;
+      }
+      label.error {
+        color: #ff690c;
+      }
+    }
+    .checkbox {
+      margin-top: 2rem;
+    }
+  }
+  input {
+    margin-left: 1rem;
+    padding: 5px;
+  }
+  #agree {
+    vertical-align: middle;
+  }
+  button.button {
+    float: right;
+    margin-right: 3rem;
+    margin-bottom: 10rem;
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width: 550px) {
+  .wrapper {
+    width: 1200px;
+  }
+  .content-wrapper {
+    margin: 0 100px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .control {
+    margin-bottom: 20rem;
+  }
+  table {
+    width: 100%;
+    font-size: 1.6rem;
+    th, td {
+      padding: .5em .75em;
+    }
+    td {
+      img {
+        height: 10rem;
+        display: inline-block;
+      }
+    }
+    th:first-child, td:first-child {
+      display: table-cell;
+    }
+  }
+  .control {
+    margin-bottom: 20rem;
+  }
+  .button {
+    font-size: 1.5rem;
+    margin: .25rem;
+  }
+  .total-price {
+    font-size: 1.6rem;
+  }
+
+  /*Checkout*/
+  .contact-form {
+    h2 {
+      font-size: 1.8rem;
+    }
+    fieldset {
+      font-size: 1.6rem;
+      border: 2px solid #dbdbdb;
+      width: 100%;
+      margin-top: 1rem;
+      p {
+        margin: 1.5rem 0;
+        label {
+          width: 20rem;
+          margin-left: 10rem;
+        }
+        label:last-child {
+          width: 40rem;
+        }
+        input {
+          width: 25rem;
+        }
+      }
+    }
+    #agree {
+      width: auto;
+      margin-left: 20rem;
+    }
+    #agree-error.error {
+      text-align: left;
+      margin-left: 1rem;
+      width: auto;
+    }
+  }
+  .error {
+    float: none;
+    width: auto;
+    margin-left: 0;
+  }
+  .delivery {
+    // width: 490px;
+  }
+}
